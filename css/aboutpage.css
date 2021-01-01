@@ -203,7 +203,7 @@ h1,h2,h3{
     .moon-para, .sec-para{
         display: block;
     }
-    .moon-para-left{
+    .moon-para-left, .sec-para .moon-para-left{
         width: 100%;
         padding-right: 15%;
         padding-bottom: 50px;
