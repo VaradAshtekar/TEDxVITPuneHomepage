@@ -1,0 +1,351 @@
+p{
+    font-family: 'Rotunda_Light_Italic';
+    font-size: 18px;
+}
+h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* About sections */
+.section-wrapper{
+    background-color: rgba(252, 252, 252, 1);
+    color: rgba(51, 51, 51, 1);  
+    
+}
+.title h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 73px;
+    font-size: 60px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.communitypics{
+    position: absolute;
+    width: 720px;
+    right: 0px;
+    border-radius: 0px;
+}
+.communitypics img{
+    height: 1084px;
+    width: 720px;
+    top: -22px;
+}
+.tedxvitpunepics{
+    height: 483px;
+    width: 720px;
+    left: 720px;
+    border-radius: 0px;  
+}
+.tedxvitpunepics img{
+    height: 483px;
+    width:720px;
+    top: -61px;
+}
+.tedxpics img{
+    height: 898px;
+    width: 600px;
+    left: 0px;
+    top: -52px;
+    border-radius: 0px;   
+}
+.tedxpics{
+    height: 898px;
+    width: 600px;
+    left: 0px;
+    top: -52px;
+    border-radius: 0px;   
+}
+.aboutuspics{
+    height: 612px;
+    width: 489px;
+    left: 111px;
+    border-radius: 0px;
+    background-image: url(./pics/about1.png);
+    background-repeat: no-repeat;
+}
+
+
+/* Moon-Section */
+.moon-wrapper, .section-wrapper{
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.moon-wrapper{
+    background-color: #E62B1E;
+    color: #fff;
+}
+
+
+.moon-wrapper a{
+    color: #fff;
+}
+.moon-wrapper h1{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-left: 9%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: 36px;
+}
+.moon-line{
+    position: relative;
+    z-index: 2;
+    margin-left: 9%;
+    margin-bottom: 60px;
+}
+.aboutus-line{
+    position: relative;
+    z-index: 2;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.moon-para{
+    width: 100%;
+    z-index: 3;
+    position: relative;
+    margin-left: 8%;
+    display: flex;
+}
+.moon-wrapper h2{
+    font-family: 'Rotunda_Light';
+    line-height: 44px;
+    
+    position: relative;
+    z-index: 4;
+    margin-left: 8%;
+    padding-top: 80px;
+    padding-bottom: 100px; 
+}
+.moon-para-left{
+    width: 42%;
+    text-align: left;
+    padding-right: 5%;
+    
+}
+.moon-para-right{
+    width: 58%;
+    padding-right: 20%;
+}
+
+.moon-para-left p, .moon-para-right p{
+    font-family: 'Rotunda_Light';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.moon-wrapper .moon-para-left p, .moon-wrapper .moon-para-right p{
+    font-family: 'Rotunda_Light';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.moon-circle{
+    position: absolute;
+    bottom: 11%;
+    right: 5%;
+}
+.moon-wrapper button{
+   
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+ .moon-wrapper button span{
+    display: block;
+    
+    padding: 10px 50px;
+  }
+  .moon-wrapper button::before,.moon-wrapper button::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+ .moon-wrapper span::before, .moon-wrapper span::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  .moon-wrapper button:hover::before,.moon-wrapper button:hover::after{
+    width: 100%;
+  }
+  .moon-wrapper button:hover span::before,.moon-wrapper button:hover span::after{
+    height: 100%;
+  }
+
+
+
+/* Responsive moon section */  
+@media screen and (max-width:1000px){
+    .moon-para-left{
+        width: 42%;
+    }
+    .moon-para-right{
+        width: 58%;
+        padding-right: 15%;
+    }
+    .aboutuspics img{
+        max-height: 600px;
+        max-width: 320px;
+        margin: 7px;
+        background-size: 100%;
+    }
+    .tedxpics img{
+        height: 600px;
+        width: 320px;
+        margin: 7px;
+        background-size: 100%;
+    }
+    .tedxvitpunepics img{
+        height: 241px;
+    }
+    .tedxvitpunepics img{
+        height: 241px;
+        width: 360px;
+        background-size: 100%;
+    }
+    .title h2{      
+        line-height: 53px;
+        font-size: 50px;
+    }
+    .communitypics{
+        width: 360px;
+        right: 0px;
+        border-radius: 0px;
+    }
+    .communitypics img{
+        height: 542px;
+        width: 360px;
+        top: -11px;
+    }
+
+}
+@media screen and (max-width:670px){
+    .moon-para{
+        display: block;
+    }
+    .title h2{      
+        line-height: 43px;
+        font-size: 40px;
+    }
+    .moon-para-left{
+        width: 100%;
+        padding-right: 15%;
+        padding-bottom: 50px;
+    }
+    .moon-para-right{
+        width: 100%;
+    }
+    .moon-wrapper h2{
+        padding-bottom: 150px;
+    }
+    .aboutuspics{
+        max-height: 600px;
+        max-width: 320px;
+        margin: 7px;
+        background-size: 100%;
+    }
+    .tedxpics{
+        height: 600px;
+        width: 320px;
+        margin: 7px;
+        background-size: 100%;
+    }
+    .tedxvitpunepics{
+        height: 241px;
+    }
+    .tedxvitpunepics img{
+        height: 241px;
+        width: 360px;
+        background-size: 100%;
+    }
+    .communitypics{
+    
+        width: 360px;
+        right: 0px;
+        border-radius: 0px;
+    }
+    .communitypics img{
+        height: 542px;
+        width: 360px;
+        top: -11px;
+    }
+
+}
+@media screen and (max-width: 1024px) and (min-height: 1000px) {
+    .moon-line{
+        margin-top: 25vh;
+    }   
+   
+}  
+  
+
+/*----- button 1 -----*/
+.btn-1 a span{
+    font-family: 'Rotunda_Bold_Italic';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.btn-1 a{
+    text-decoration: none;
+}
+.btn-1::before, .btn-1::after{
+    transition-delay: 0.2s;
+  }
+  .btn-1 span::before, .btn-1 span::after{
+    transition-delay: 0s;
+  }
+  .btn-1::before{
+    right: 0;
+    top: 0;
+  }
+  .btn-1::after{
+    left: 0;
+    bottom: 0;
+  }
+  .btn-1 span::before{
+    left: 0;
+    top: 0;
+  }
+  .btn-1 span::after{
+    right: 0;
+    bottom: 0;
+  }
+  .btn-1:hover::before, .btn-1:hover::after{
+    transition-delay: 0s;
+  }
+  .btn-1:hover span::before, .btn-1:hover span::after{
+    transition-delay: 0.2s;
+  }
+
+  
