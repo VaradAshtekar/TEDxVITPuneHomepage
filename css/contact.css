@@ -1,0 +1,48 @@
+.outline{
+    font-family:'Montserrat', sans-serif;
+    font-size: 14vw;
+    position: absolute;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width:1px ;
+    opacity: 0.15;
+    z-index: -3;
+
+}
+
+.main_heading{
+    padding-top: 7%;
+    padding-left: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6vw;
+  
+   
+}
+
+@media screen and (max-width:768px){
+    .outline{
+        /*  padding-top: 10%; */
+        font-size: 13.7vw;
+    }
+    .main_heading{
+        padding-top: 5%;
+        font-size: 9.5vw;
+    }
+}
+
+@media screen and (max-width:480px){
+    .outline{
+        /*  padding-top: 10%; */
+        font-size: 14.3vw;
+        margin-top: 15.3vh ;
+        -webkit-transform: scaleY(1.1);
+        transform: scaleY(1.1);
+    
+    
+    }
+    .main_heading{
+        padding-top:18.3vh;
+        font-size: 9.5vw;
+    }
+
+}

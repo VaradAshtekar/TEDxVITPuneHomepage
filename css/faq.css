@@ -1,0 +1,112 @@
+
+  
+  #faqs{
+      text-align: center;
+    padding-top: 30px;
+    padding-bottom:50px ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color:#eaeaea ;
+  }
+  
+  details {
+    width: 85%;
+    min-height: 5px;
+    max-width: 800px;
+    padding: 20px 70px 20px 45px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.253);
+    border-radius: 9px;
+    box-sizing: border-box;
+    transition: ease-in-out .5s;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  details + details {
+    margin-top: 20px;
+  }
+  
+  details[open] {
+   
+    min-height: 50px;
+    background-color: #D8D4D4;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+    color: #1F1F1F;
+  }
+  
+  details p {
+    color: #1F1F1F;
+    padding-top: 10px;
+    font-family: 'Rotunda_Light_Italic';
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+
+  }
+  summary h6{
+      font-size:20px ;
+      margin-right:20px ;
+  }
+  summary:focus {
+    outline: none;
+    
+  }
+  
+  summary:focus::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* box-shadow: 0 0 0 5px rebeccapurple; */
+  }
+  
+  summary::-webkit-details-marker {
+    display: none
+  }
+  
+  .control-icon {
+    fill: #e32b1e;
+    transition: .3s ease;
+    pointer-events: none;
+  }
+  
+  .control-icon-close {
+    display: none;
+  }
+  
+  details[open] .control-icon-close {
+    display: initial;
+    transition: .5s ease;
+  }
+  
+  details[open] .control-icon-expand {
+    display: none;
+  }
+
+  @media screen and (max-width:510px){
+        
+    details{
+        font-size: 18px;
+        padding: 20px 15px 20px 20px;
+        width: 90%;
+    }
+    details p{
+        font-size: 16px;
+    }
+
+        #faqs{
+            font-size: 30px;
+        }
+}
