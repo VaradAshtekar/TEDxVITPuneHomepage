@@ -22,7 +22,6 @@ h1,h2,h3{
     padding-bottom: 10vh;
 }
 .communitypics{
-    position: absolute;
     width: 720px;
     right: 0px;
     border-radius: 0px;
@@ -43,16 +42,13 @@ h1,h2,h3{
     width:720px;
     top: -61px;
 }
-.tedxpics img{
-    height: 898px;
-    width: 600px;
-    left: 0px;
-    top: -52px;
-    border-radius: 0px;   
-}
+
 .tedxpics{
-    height: 898px;
-    width: 600px;
+    background-image: url(/pics/about2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 850px;
+    width: 500px;
     left: 0px;
     top: -52px;
     border-radius: 0px;   
@@ -139,7 +135,7 @@ h1,h2,h3{
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .moon-wrapper .moon-para-left p, .moon-wrapper .moon-para-right p{
@@ -223,12 +219,10 @@ h1,h2,h3{
         background-size: 100%;
     }
     .tedxvitpunepics img{
-        height: 241px;
-    }
-    .tedxvitpunepics img{
+    
         height: 241px;
         width: 360px;
-        background-size: 100%;
+        /* background-size: 100%; */
     }
     .title h2{      
         line-height: 53px;
@@ -286,7 +280,7 @@ h1,h2,h3{
         background-size: 100%;
     }
     .communitypics{
-    
+        
         width: 360px;
         right: 0px;
         border-radius: 0px;
@@ -296,15 +290,57 @@ h1,h2,h3{
         width: 360px;
         top: -11px;
     }
+    .moon-para-left p, .moon-para-right p{
+        font-family: 'Rotunda_Light';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 5%;
+    }
 
 }
 @media screen and (max-width: 1024px) and (min-height: 1000px) {
     .moon-line{
         margin-top: 25vh;
     }   
-   
-}  
+}
   
+@media screen and (max-width: 1032px) {
+    .aboutuspics img{
+        max-height: 600px;
+        max-width: 320px;
+        margin: 7px;
+        background-size: 100%;
+    }
+    .tedxpics{
+        max-height: 600px;
+        max-width: 320px;
+        margin: 7px;
+        background-size: 100%;
+    }
+    .tedxvitpunepics img{
+    
+        height: 241px;
+        width: 360px;
+        /* background-size: 100%; */
+    }
+
+    .communitypics{
+        width: 360px;
+        right: 0px;
+        border-radius: 0px;
+    }
+    .communitypics img{
+        height: 542px;
+        width: 360px;
+        top: -11px;
+    }
+    
+
+}
 
 /*----- button 1 -----*/
 .btn-1 a span{
