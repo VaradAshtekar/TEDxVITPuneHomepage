@@ -44,7 +44,7 @@ h1,h2,h3{
 }
 
 .tedxpics{
-    background-image: url(/pics/about2.jpg);
+    background-image: url(./pics/about2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 850px;
