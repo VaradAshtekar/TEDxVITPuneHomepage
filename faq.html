@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
+    <title>TEDxVITPune-Home</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/faq.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ee797009cb.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <script language="javascript" type="text/javascript" 
+  src="./header.txt"></script>
+  
+  <h2 id="faqs">Frequently Asked Questions</h2>
+   <div class="sections">
+        <div class="question">
+          <p>Is there a limit to the number of attendees?</p> </div>
+        <div class="answer"></div>
+   </div>
+   <div class="sections">
+    <div class="question"> <p>Is there a selection process for TEDxVITPune?</p></div>
+    <div class="answer"><p>Yes, TEDxVITPune is an invite-only event where attendees are allowed to buy tickets post a screening process. </p></div>
+</div>
+<div class="sections">
+  <div class="question"><p>What does the TEDxVITPune ticket include?</p></div>
+</div>
+<div class="sections">
+  <div class="question"> <p>Is there a limit to the number of attendees?</p></div>
+</div>
+<div class="sections">
+  <div class="question"> <p>Is there a limit to the number of attendees? </p> </div>
+</div>
+<div class="sections">
+  <div class="question"><p> Is there a limit to the number of attendees? </p></div>
+</div>
+<div class="sections">
+  <div class="question"> <p>Is there a limit to the number of attendees?</p></div>
+  
+
+</div>
+<script>
+  
+  console.log("hi");
+  const question = document.getElementsByClassName("question");
+  var answer = document.getElementsByClassName("answer");
+
+  for (var i = 0; i < question.length; i++) {
+       document.getElementById(answer[i].id).style.display == 'none';
+  
+       question[i].addEventListener("mouseover", function(){
+       console.log(i);
+       document.getElementById(answer[i].id).style.display == 'block';
+    }, false)
+  }
+</script>
+</body>
+</html>
