@@ -1,0 +1,37 @@
+body{
+    background: #E5E5E5;
+}  
+  #faqs{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:50px ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    line-height: 61px ;
+    color: #333333;
+}
+.sections{
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  font-size: 26px;
+  line-height: 36px;
+  box-shadow: gray;
+  padding: 2%;
+}
+
+.answer{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 1%;
+}
+  @media screen and (max-width:510px){
+        
+        #faqs{
+            font-size: 30px;
+        }
+}
