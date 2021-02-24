@@ -1,0 +1,138 @@
+body{
+    background: #FFFFFF;
+}  
+  #faqs{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5% ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    line-height: 70px ;
+    color: #333333;
+}
+.sections img{
+  padding-top: 0px;
+}
+#category{
+  padding: 2%;
+  text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 50px ;
+    color: #333333;
+}
+
+.sections {
+  display: block;
+  margin: 1% 10% 1% 10%;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.sections .question p{
+  padding: 2% 20% 2% 20%;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sections .answer {
+  padding: 0%  20%  2%  20%;
+  transition: 1s linear;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  color: #333333;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.social-media{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2%;
+}
+
+  @media screen and (max-width:510px){
+        img{
+          display: none;
+        }
+        #faqs{
+            padding: 4% 2% 2% 2%;
+            font-size: 25px;
+            line-height: 35px;
+        }
+        #category{
+            padding: 1% 0% 5% 0%;
+            font-size: 20px;
+            line-height: 30px ;
+    
+        }
+        
+        .sections {
+          display: block;
+          padding: 3%;
+          margin: 1% 5% 4% 5%;
+          text-align: left;
+          box-shadow: 0px 1px rgb(219, 219, 219);
+          font-size: 13px;
+          line-height: 26px;
+        }
+        
+        .sections .question p{
+          padding: 2% 3% 2% 3%;
+          display: block;
+          text-align: left;
+          cursor: pointer;
+        }
+        .sections .answer {
+          text-align: left;
+          padding: 0%  2%  2%  2%;
+          transition: 1s linear;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 10px;
+          line-height: 16px;
+        }
+        
+}
+
+
+@media (min-width: 510px) and (max-width:810px){
+ 
+  #faqs{
+      padding: 4% 2% 2% 2%;
+      font-size: 30px;
+      line-height: 40px;
+  }
+  #category{
+      padding: 1% 0% 5% 0%;
+      font-size: 30px;
+      line-height: 40px ;
+
+  }
+  .sections {
+    display: block;
+    padding: 3%;
+    margin: 1% 5% 4% 5%;
+    box-shadow: 0px 1px rgb(216, 216, 216);
+    font-size: 25px;
+    line-height: 36px;
+  }
+  
+  .sections .answer {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+a{
+  text-decoration: none;
+}
