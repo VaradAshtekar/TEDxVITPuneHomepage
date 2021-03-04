@@ -75,6 +75,7 @@ h1,h2,h3{
     color: #fff;
 }
 .counter{
+           background: white;
            display: flex;
            flex-direction: column;
        }
