@@ -40,9 +40,40 @@
         </div>
       </div>
     </div>
-
+  
   </div>
-
+  <div class="counter" id="counter">
+        <div class="line">
+            <div class="numbers">
+                <div class="line">
+                   <p class="num" data-target="7">0</p>
+                </div>  
+                <p class="para">Events</p>
+            </div>
+            <div class="numbers">
+                <div class="line">
+                    <p class="num" data-target="50">0</p>
+                    <p class="plus"> + </p>
+                 </div> 
+                <p class="para">Speakers and Performers</p>
+            </div>
+            <div class="numbers">
+                <div class="line">
+                    <p class="num" data-target="70">0</p>
+                    <p class="plus"> + </p>
+                 </div> 
+                <p class="para">Attendee</p> 
+            </div>
+            <div class="numbers">
+                <div class="line">
+                    <p class="num" data-target="600000">0</p>
+                    <p class="plus"> + </p>
+                 </div> 
+                <p class="para">Total Video Views</p>
+            </div>
+        </div>
+       
+    </div>
   <!-- About Section -->
   <div class="moon-wrapper">
 
@@ -142,6 +173,34 @@
   <script language="javascript" type="text/javascript" src="./footer-new.txt"></script>
   <script src="./js/menu.js"></script>
   <script>
+        document.getElementById("counter").addEventListener("scroll", function(){
+    const counters = document.querySelectorAll('.num');
+const speed = 200;
+    counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        const inc = target / speed;
+
+        // console.log(inc);
+        // console.log(count);
+
+        // Check if target is reached
+        if (count < target) {
+            // Add inc to count and output in counter
+            counter.innerText = count + Math.ceil(inc);
+            // Call function every ms
+            setTimeout(updateCount, 1);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCount();
+});
+
+});
         gsap.from('.moon-wrapper .moon-para-right', { scrollTrigger: '.moon-wrapper', duration: 1, opacity: 0, x: '100%' })        
         gsap.from('.section-wrapper .moon-para-right', { scrollTrigger: '.section-wrapper', duration: 1, opacity: 0, x: '100%' })        
         gsap.from('.moon-wrapper .moon-para-left', { scrollTrigger: '.moon-wrapper', duration: 1, opacity: 0, x: '-100%' })        
