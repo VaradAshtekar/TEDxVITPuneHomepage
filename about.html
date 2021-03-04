@@ -173,7 +173,6 @@
   <script language="javascript" type="text/javascript" src="./footer-new.txt"></script>
   <script src="./js/menu.js"></script>
   <script>
-        document.getElementById("counter").addEventListener("scroll", function(){
     const counters = document.querySelectorAll('.num');
 const speed = 200;
     counters.forEach(counter => {
@@ -200,7 +199,6 @@ const speed = 200;
     updateCount();
 });
 
-});
         gsap.from('.moon-wrapper .moon-para-right', { scrollTrigger: '.moon-wrapper', duration: 1, opacity: 0, x: '100%' })        
         gsap.from('.section-wrapper .moon-para-right', { scrollTrigger: '.section-wrapper', duration: 1, opacity: 0, x: '100%' })        
         gsap.from('.moon-wrapper .moon-para-left', { scrollTrigger: '.moon-wrapper', duration: 1, opacity: 0, x: '-100%' })        
