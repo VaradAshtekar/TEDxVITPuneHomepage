@@ -173,78 +173,7 @@
     }
 }
 
- .counter{
-           display: flex;
-           flex-direction: column;
-       }
-       .line{
-           justify-content: center;
-           display: flex;
-           flex-direction: row;
-       }
-       .numbers{
-           grid-template-columns: repeat(4, 1fr);
-           margin-top: 0%;
-           padding: 0% 4% 0% 4%;
-           text-align: center;
-       }
-       .numbers2{
-           margin-top: 0%;
-           padding: 0% 2% 0% 2%;
-           text-align: center;
-       }
-       .num{
-           font-family: 'Roboto', sans-serif;
-           font-weight: bold;
-           font-size: 56px;
-           line-height: 66px;
-           color: black;
-       }
-       .para{
-           font-family: 'Roboto', sans-serif;
-           font-weight: normal;
-           color: gray;
-           font-size: 20px;
-           line-height: 36px;
-           
-       }
-       .line{
-           font-size: 56px;
-           line-height: 66px;
-           display: flex;
-           flex-direction: row;
-           font-weight: bold;
-       }
-
-       @media screen and (max-width:510px){
-        .numbers{
-           margin-top: 0%;
-           padding: 0% 3% 0% 3%;
-           text-align: center;
-       }
-       .numbers2{
-           margin-top: 0%;
-           padding: 0% 1.5% 0% 1.5%;
-           text-align: center;
-       }
-        .num{
-            grid-template-columns: repeat(4, 1fr);
-           font-size: 20px;
-           line-height: 36px;
-           margin: 0;
-       }
-       .para{
-           padding: 2%;
-           font-size: 12px;
-           line-height: 22px;
-        
-       }
-       .numbers {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
  
-}
 /* Section tedx */
 .section_tedx{
     min-height: 100vh;
