@@ -144,7 +144,11 @@ h1,h2,h3{
        .numbers {
         grid-template-columns: repeat(2, 1fr);
     }
-
+       .plus{
+           margin: 0;
+           padding: 0;
+           color: white;
+           }
  
 }
 
